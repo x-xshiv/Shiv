@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 20px;
+        font-size: 16px;
+    }
+</style>
+<body>
+    <table>
+    <tr>
+        <th>Time</th>
+        <th>I</th>
+        <th>II</th>
+        <th>III</th>
+        <th>IV</th>
+        <th>V</th>
+        <th>VI</th>
+        <th>VII</th>
+        <th>VIII</th>
+        <th>IX</th>
+    </tr>
+        <tr>
+        <th>Day</th>
+        <th>08:50-09:40</th>
+        <th>09:40-10:30</th>
+        <th>10:40-11:30</th>
+        <th>11:30-12:20</th>
+        <th>12:20-01:10</th>
+        <th>01:10-02:00</th>
+        <th>02:00-02:50</th>
+        <th>02:50-03:40</th>
+        <th>03:40-04:30</th>
+    </tr>
+    <tr>
+        <th>Monday</th>
+        <td>25HU101<br>(SPT)<br>RJ-103</td>
+        <td>25EC101<br>(SVA)<br>RJ-103</td>
+        <td>25ME101<br>(MK)<br>BH-306</td>
+        <td colspan="2">25HU151<br>(SPT,DKR)<br>KC Block V Floor (KC-510)</td>
+        <td rowspan="5">Lunch</td>
+        <td>25HU102<br>(NY)<br>RJ-105</td>
+        <td>25AS102<br>(PJ)<br>RJ-105</td>
+        <td>25VA151<br>(DDH)<br>RJ-105</td>      
+    </tr>
+    <tr>
+        <th>Tuesday</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="2"></td>
+    </tr>
+    <tr>
+        <th>Wednesday</th>
+        <td colspan="2"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Thursday</th>
+        <td colspan="2"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Friday</th>
+        <td colspan="2"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </table>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
