@@ -1,3 +1,4 @@
+//write a program to calculate average marks
 #include<iostream>
 using namespace std;
 int main(){

@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TimeTable</title>
 </head>
 <style>
-    table, th, td {
-        border: 1px solid black;
+.timetable{
         border-collapse: collapse;
         text-align: center;
         padding: 20px;
         font-size: 16px;
-    }
+        margin:auto;
+}
+.timetable table, .timetable th, .timetable td{
+    border: 2px solid rgb(0, 0, 0);
+    padding-left:10px;
+    padding-right:10px;
+    padding-top: 5px;
+    padding-bottom:5px;
+}
 </style>
 <body>
-    <table>
+    <h1 style="text-align:center;">TimeTable CSE-26</h1>
+    <h3 style="text-align:center;"><u>Made By Shiv Goyal</u></h3>
+    <table class = "timetable"; style="width:1200px;height:300px;">
     <tr>
         <th>Time</th>
         <th>I</th>
@@ -39,7 +48,7 @@
         <th>02:50-03:40</th>
         <th>03:40-04:30</th>
     </tr>
-    <tr>
+    <tr height="100px">
         <th>Monday</th>
         <td>25HU101<br>(SPT)<br>RJ-103</td>
         <td>25EC101<br>(SVA)<br>RJ-103</td>
@@ -50,7 +59,7 @@
         <td>25AS102<br>(PJ)<br>RJ-105</td>
         <td>25VA151<br>(DDH)<br>RJ-105</td>      
     </tr>
-    <tr>
+    <tr height="100px">
         <th>Tuesday</th>
         <td>25EC101<br>(SVA)<br>RJ-104</td>
         <td>25AS102<br>(PJ)<br>RJ-104</td>
@@ -60,6 +69,7 @@
         <td>25ME101<br>(MK)<br>RJ-106</td>
         <td colspan="2">25CS151<br>(NLA)<br>RJ-106</td>
     </tr>
+    <tr height="100px">
         <th>Wednesday</th>
         <td colspan="2">25EC151<br>(SVA,ATS)<br>Bhabha Block I Floor (BH-115)</td>
         <td>25AS102<br>(PJ)<br>RJ-305</td>
@@ -69,7 +79,7 @@
         <td>25EC101<br>(SVA)<br>RJ-104</td>
         <td></td>
     </tr>
-    <tr>
+    <tr height="100px">
         <th>Thursday</th>
         <td colspan="2">25VA151<br>(DDH)<br>RJ-104</td>
         <td>25AS102<br>(PJ)<br>RJ-104</td>
@@ -79,7 +89,7 @@
         <td>25EC101<br>(SVA)<br>RJ-105</td>
         <td>25AS102<br>(PJ)<br>RJ-105</td>
     </tr>
-    <tr>
+    <tr height="100px">
         <th>Friday</th>
         <td colspan="2">25ME151<br>(MK,SA)<br>Vishkarma Block Ground Floor</td>
         <td>25CS101<br>(NLA)<br>RJ-102</td>
@@ -90,62 +100,99 @@
         <td>Mentor-Mentee<br>(NLA,SVA)<br>RJ-105</td>
     </tr>
     </table>
-    <table>
-        <tr>
-            <td>SUBCODE</th>
-            <td>SUBNAME</td>
-            <td>FACULTY(Abbr.)</td>
+    <table style="padding:20px";></table>
+    <table class = "timetable"; style="width:1200px;height:300px;">
+        <tr height="60px">
+            <th>SUBCODE</th>
+            <th>SUBNAME</th>
+            <th>FACULTY(Abbr.)</th>
             <th>LABCODE</td>
             <th>LAB NAME</td>
             <th>FACULTY(Abbr.)</td>
         </tr>
-        <tr>
+        <tr height="60px">
             <td>25ME101</td>
             <td>Basics of Mechanical & Automation Engg.</td>
-            <td>Dr. Manoj Kumar(MK)</td>
+            <td>Dr. Manoj Kumar (MK)</td>
             <td>25CS151</td>
-            <td></td>
-            <td></td>
+            <td>Data Structure Lab</td>
+            <td>Ms. Nidhi Shalya (NLA)</td>
         </tr>
-        <tr>
+        <tr height="60px">
             <td>25EC101</td>
             <td>Basis of Electronics Engg.</td>
             <td>Ms. Shilpa Srivastava (SVA)</td>
             <td>25HU151</td>
-            <td></td>
-            <td></td>
+            <td>Professional Communication Lab</td>
+            <td>
+                <table border="1px;" style="border-collapse:collapse;font-size:10px;margin:auto;width:150px;height:30px;">
+                <tr>
+                    <td>Dr. Sanjna Plawat (SPT)</td>
+                </tr>
+                <tr>
+                    <td>D.K.Rana (DKR)</td>
+                </tr>
+                </table>
+            </td>
         </tr>
-        <tr>
+        <tr height="60px">
             <td>25AS102</td>
             <td>Fundamentals of Liner Algebra and Statistics</td>
-            <td>Dr. Prachi Jain(PJ)</td>
+            <td>Dr. Prachi Jain (PJ)</td>
             <td>25EC151</td>
-            <td></td>
-            <td></td>
+            <td>Basic Electronics Engg. Lab</td>
+            <td>
+                <table border="1px;" style="border-collapse:collapse;font-size:10px;margin:auto;width:150px;height:30px;">
+                <tr>
+                    <td>Ms. Shilpa Srivastava (SVA)</td>
+                </tr>
+                <tr>
+                    <td>Dr. Aarti Sharma (ATS)</td>
+                </tr>
+                </table>
+            </td>
         </tr>
-        <tr>
+        <tr height="60px">
             <td>25CS101</td>
             <td>Data Structure</td>
             <td>Ms. Nidhi Shalya (NLA)</td>
             <td>25ME151</td>
-            <td></td>
-            <td></td>
+            <td>Digital Manufacturing Lab</td>
+            <td>
+                <table border="1px;" style="border-collapse:collapse;font-size:10px;margin:auto;width:150px;height:30px;">
+                <tr>
+                    <td>Dr. Manoj Kumar (MK)</td>
+                </tr>
+                <tr>
+                    <td>Mr. Saurabh (SA)</td>
+                </tr>
+                </table>
+            </td>
         </tr>
-        <tr>
+        <tr height="60px">
             <td>25HU101</td>
             <td>Soft Skills</td>
-            <td>Dr. Sanjna Plawat(SPT)</td>
+            <td>Dr. Sanjna Plawat (SPT)</td>
             <td>25VA151</td>
-            <td></td>
-            <td></td>
+            <td>Web Designing Workshop I</td>
+            <td>Ms. Deepti S. Deshmukh (DDH)</td>
         </tr>
-        <tr>
+        <tr height="60px">
             <td>25HU102</td>
             <td>Design Thinking</td>
-            <td>Dr. Neelam Yadv (NY)</td>
+            <td>Dr. Neelam Yadav (NY)</td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td>Mentor-Mentee</td>
+            <td>
+                <table border="1px;" style="border-collapse:collapse;font-size:10px;margin:auto;width:150px;height:30px;">
+                <tr>
+                    <td>Ms. Nidhi Shalya (NLA)</td>
+                </tr>
+                <tr>
+                    <td>Ms. Shilpa Srivastava (SVA)</td>
+                </tr>
+                </table>
+            </td>
         </tr>
     </table>
 </body>
