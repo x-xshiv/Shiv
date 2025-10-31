@@ -15,6 +15,6 @@ int main(){
     cin>>n;
     while(i<=n){
         cout<<i<<" ";
-        i++;
+        i+=2;
     }
 }
