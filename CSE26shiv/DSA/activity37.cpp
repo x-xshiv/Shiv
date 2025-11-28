@@ -15,7 +15,7 @@ int main(){
         cout<<"for program 3 type 3\n";
         cout<<"for program 4 type 4\n";
         cout<<"for program 5 type 5\n";
-        cout<<"for exiting type 0\n";
+        cout<<"for exiting type 0 :- ";
         cin>>n;
         switch(n){
             case 0:
@@ -76,7 +76,7 @@ void p1(){
 
 void p2(){
     int a,x,b,n,y;
-    cout<<"enter the value of a,x,b,n respectively";
+    cout<<"enter the value of a,x,b,n respectively : ";
     cin>>a>>x>>b>>n;
     if(n==1){
         y=a*x%b;
