@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Cards</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+    }
+
+    .page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* BLACK BOX AROUND ALL CARDS */
+    .outer-box {
+      border: 2px solid #000;   /* black border */
+      padding: 40px 60px;       /* space between border and cards */
+    }
+
+    .card-row {
+      display: flex;
+      gap: 40px;
+    }
+
+    .card {
+      width: 230px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      padding: 30px 20px 25px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 15px;
+      border-radius: 50%;
+      background: #007bff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    .name {
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .branch,
+    .roll,
+    .year {
+      font-size: 13px;
+      color: #555555;
+      margin: 2px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="outer-box">
+      <div class="card-row">
+        <div class="card">
+          <div class="avatar">JK</div>
+          <div class="name">Jeet Kumar</div>
+          <div class="branch">B.Tech - CSE</div>
+          <div class="roll">Roll No: 21CS1007</div>
+          <div class="year">1st Year</div>
+        </div>
+
+        <div class="card">
+          <div class="avatar">AR</div>
+          <div class="name">Asha Rani</div>
+          <div class="branch">B.Tech - IT</div>
+          <div class="roll">Roll No: 21IT1012</div>
+          <div class="year">1st Year</div>
+        </div>
+
+        <div class="card">
+          <div class="avatar">RK</div>
+          <div class="name">Rohit Kumar</div>
+          <div class="branch">B.Tech - ECE</div>
+          <div class="roll">Roll No: 21EC1009</div>
+          <div class="year">1st Year</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

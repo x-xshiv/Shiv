@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experiment 9 - Responsive Product Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+        }
+
+        .wrapper {
+            border: 1px solid #000;
+            margin: 40px;
+            padding: 20px 30px 30px;
+            background-color: #f8f8f8;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 6px;
+            padding: 15px 18px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+            text-align: left;
+        }
+
+        .card img {
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 4px;
+        }
+
+        .card .small-title {
+            font-size: 13px;
+            color: #555;
+        }
+
+        .card h3 {
+            margin: 8px 0 4px;
+            font-size: 16px;
+        }
+
+        .card p {
+            margin: 3px 0;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .price {
+            margin-top: 6px;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        /* Tablet */
+        @media (max-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .wrapper {
+                margin: 10px;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Responsive Product Grid</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="small-title">
+                    <img src="https://via.placeholder.com/32" alt="Product 1">
+                    Product 1
+                </div>
+                <h3>Product 1</h3>
+                <p>High-quality item with great features.</p>
+                <p class="price">₹499</p>
+            </div>
+            <div class="card">
+                <div class="small-title">
+                    <img src="https://via.placeholder.com/32" alt="Product 2">
+                    Product 2
+                </div>
+                <h3>Product 2</h3>
+                <p>Durable and stylish for daily use.</p>
+                <p class="price">₹799</p>
+            </div>
+            <div class="card">
+                <div class="small-title">
+                    <img src="https://via.placeholder.com/32" alt="Product 3">
+                    Product 3
+                </div>
+                <h3>Product 3</h3>
+                <p>Lightweight and comfortable.</p>
+                <p class="price">₹1,299</p>
+            </div>
+            <div class="card">
+                <div class="small-title">
+                    <img src="https://via.placeholder.com/32" alt="Product 4">
+                    Product 4
+                </div>
+                <h3>Product 4</h3>
+                <p>Trendy design with premium quality.</p>
+                <p class="price">₹999</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

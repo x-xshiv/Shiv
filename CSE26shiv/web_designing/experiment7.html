@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experiment 7 - Navigation Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+        }
+
+        /* Outer border box */
+        .container {
+            border: 1px solid #000;
+            margin: 10px;
+        }
+
+        /* Title bar (block) */
+        .title-bar {
+            background-color: #e0e0e0;
+            text-align: center;
+            padding: 8px 0;
+        }
+        .title-bar span {
+            display: inline;
+        }
+        .title-bar .red {
+            color: red;
+        }
+
+        /* Top menu (blue) */
+        .top-menu,
+        .bottom-menu {
+            padding: 8px 10px;
+        }
+
+        .menu-link {
+            display: inline-block; /* inline-block demo */
+            background-color: #b0cff7; /* light blue */
+            border: 1px solid #888;
+            padding: 4px 10px;
+            margin-right: 4px;
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+        }
+
+        .bottom-menu .menu-link {
+            background-color: #8ee48e; /* light green */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-bar">
+            <span>My </span>
+            <span class="red">Website</span>
+            <span> Navigation</span>
+        </div>
+
+        <div class="top-menu">
+            <a href="#" class="menu-link">Home</a>
+            <a href="#" class="menu-link">About</a>
+            <a href="#" class="menu-link">Services</a>
+            <a href="#" class="menu-link">Contact</a>
+        </div>
+
+        <div class="bottom-menu">
+            <a href="#" class="menu-link">Dashboard</a>
+            <a href="#" class="menu-link">Profile</a>
+            <a href="#" class="menu-link">Messages</a>
+            <a href="#" class="menu-link">Logout</a>
+        </div>
+    </div>
+</body>
+</html>

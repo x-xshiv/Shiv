@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Box Model Demo</title>
+  <style>
+    body {
+      background: #243447;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      margin-top: 40px;
+    }
+
+    .margin-box {
+      background: #ff6f4b;           /* margin area color */
+      padding: 40px;                 /* this is the margin area in picture */
+      margin:auto;
+      width:400px;
+    }
+
+    .border-box {
+      background: #00a8c6;           /* border area color */
+      padding: 30px;
+      border: 0;                     /* color block only */
+    }
+
+    .padding-box {
+      background: #ffc94b;           /* padding area color */
+      padding: 30px;
+    }
+
+    .content-box {
+      background: #00c9a7;           /* content area color */
+      padding: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Box Model</h1>
+
+  <div class="margin-box">
+    Margin
+    <div class="border-box">
+      Border
+      <div class="padding-box">
+        Padding
+        <div class="content-box">
+          Content
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

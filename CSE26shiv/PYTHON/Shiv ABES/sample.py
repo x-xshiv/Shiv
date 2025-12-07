@@ -54,7 +54,7 @@ def blur_faces_in_image(image_path, output_path=None):
 
 # Example usage
 if __name__ == "__main__":
-    input_image = "path/to/your/input_image.jpg"  # Replace with your image path
+    input_image = "face.jpg"  # Replace with your image path
     output_image = "path/to/output_image.jpg"     # Optional: Replace with desired output path
     
     blur_faces_in_image(input_image, output_image)
