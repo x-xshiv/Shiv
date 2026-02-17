@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experiment 7 - Navigation Panel</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "arial";
+        }
+        .container {
+            border: 1px solid black;
+            margin: 10px;
+        }
+        .titlebar {
+            background-color: yellow;
+            text-align: center;
+            padding: 8px 0;
+        }
+        .titlebar span {
+            display: inline-block;
+        }
+        .titlebar .red {
+            color: red;
+        }
+        .top-menu, .bottom-menu {
+	    padding: 8px 10px;
+        }
+
+        .menu-link {
+            display: inline-block;
+            background-color: cyan;
+            border: 1px solid black;
+            padding: 4px 50px;
+            margin-right: 5px;
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+
+        .bottom-menu .menu-link {
+            background-color: olive;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="titlebar">
+            <span class="red">My Website Navigation</span>
+        </div>
+
+        <div class="top-menu">
+            <a href="#" class="menu-link">Home</a>
+            <a href="#" class="menu-link">About Us</a>
+            <a href="#" class="menu-link">Vision</a>
+            <a href="#" class="menu-link">Contact Us</a>
+        </div>
+
+        <div class="bottom-menu">
+            <a href="#" class="menu-link">Dashboard</a>
+            <a href="#" class="menu-link">Profile</a>
+            <a href="#" class="menu-link">Cart</a>
+            <a href="#" class="menu-link">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
